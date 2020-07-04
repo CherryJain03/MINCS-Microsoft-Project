@@ -1,23 +1,55 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+    <head>
+        <title>Tic-Tac-Toe AI</title>
+        <link rel = 'stylesheet' type = 'text/css' href = 'styles/ui.css'>
+    </head>
 
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8" />
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-        </div>
+    <body>
+        <div class = 'main-container'>
+            <div class = 'board'>
+                <!-- data-indx following cell divs represents cell index in 1D array representation -->
+                <div class='cell' data-indx = "0" ></div>
+                <div class='cell' data-indx = "1" ></div>
+                <div class='cell' data-indx = "2" ></div>
+                <div class='cell' data-indx = "3" ></div>
+                <div class='cell' data-indx = "4" ></div>
+                <div class='cell' data-indx = "5" ></div>
+                <div class='cell' data-indx = "6" ></div>
+                <div class='cell' data-indx = "7" ></div>
+                <div class='cell' data-indx = "8" ></div>
+            </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a href="withComputer.html" class="navbar-item">With Computer</a>
-                <a href="two-friend.html" class="navbar-item">With Friend</a>
+            <div class = 'control'>
+                <!-- div.intial displays the starting controls -->
+                <div class = 'intial'>
+                    <div class='difficulty'>
+                        <span class='level not-selected' id="blind">level 1</span>
+                        <span class='level not-selected' id="novice">level 2</span>
+                        <span class='level not-selected' id="novice 1">level 3</span>
+                        <span class='level not-selected' id="novice 2">level 4</span>
+                        <span class='level not-selected' id="master">Infinite</span>
+                    </div>
+
+                    <div class='start'> Start </div>
+                </div>
+
+                <!-- div.ingame displays in-game messages and controls -->
+                <div class = 'ingame' id="human">It's your turn ...</div>
+                <div class = 'ingame' id="ai">
+                    <img src = "imgs/robot.png" id = "robot" class = "robot" />
+                    <p>Waint for it ...</p>
+                </div>
+                <div class = 'ingame' id="won">You won !</div>
+                <div class = 'ingame' id="lost">You lost !</div>
+                <div class = 'ingame' id="draw">It's a Draw</div>
             </div>
         </div>
-    </nav>
-</head>
 
+        <script src = "scripts/jquery-1.10.1.min.js"></script>
+        <script src = "scripts/ui.js"></script>
+        <script src = "scripts/game.js"></script>
+        <script src = "scripts/ai.js"></script>
+        <script src = "scripts/control.js"></script>
+    </body>
 </html>
