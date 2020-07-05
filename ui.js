@@ -12,21 +12,6 @@ ui.robotFlickeringHandle = 0;
 //holds the current visible view
 ui.currentView = "";
 
-/*
- * starts the flickering effect of the robot image
- */
-ui.startRobotFlickering = function() {
-    ui.robotFlickeringHandle = setInterval(function() {
-        $("#robot").toggleClass('robot');
-    }, 500);
-};
-
-/*
- * stops the flickering effect on the robot image
- */
-ui.stopRobotFlickering = function() {
-    clearInterval(ui.robotFlickeringHandle);
-};
 
 /*
  * switchs the view on the UI depending on who's turn it switchs
@@ -39,8 +24,7 @@ ui.switchViewTo = function(turn) {
         ui.currentView = "#" + _turn;
         $(ui.currentView).fadeIn("fast");
 
-        if(_turn === "ai")
-            ui.startRobotFlickering();
+        
     }
 
     if(ui.intialControlsVisible) {

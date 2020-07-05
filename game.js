@@ -1,6 +1,6 @@
 /*
  * Represents a state in the game
- * @param old [State]: old state to intialize the new state
+ * old [State]: old state to intialize the new state
  */
 var State = function(old) {
 
@@ -108,7 +108,7 @@ var State = function(old) {
 
 /*
  * Constructs a game object to be played
- * @param autoPlayer [AIPlayer] : the AI player to be play the game with
+ * autoPlayer [AIPlayer] : the AI player to be play the game with
  */
 var Game = function(autoPlayer) {
 
@@ -179,8 +179,8 @@ var Game = function(autoPlayer) {
 
 /*
  * public static function that calculates the score of the x player in a given terminal state
- * @param _state [State]: the state in which the score is calculated
- * @return [Number]: the score calculated for the human player
+ * the state in which the score is calculated
+ * return [Number]: the score calculated for the human player
  */
 Game.score = function(_state) {
     if(_state.result === "X-won"){
