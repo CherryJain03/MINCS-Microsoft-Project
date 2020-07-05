@@ -7,28 +7,34 @@
 
     <body>
         <div class = 'main-container'>
-            <div class = 'board'>
+            <div class='board'>
                 <!-- data-indx following cell divs represents cell index in 1D array representation -->
-                <div class='cell' data-indx = "0" ></div>
-                <div class='cell' data-indx = "1" ></div>
-                <div class='cell' data-indx = "2" ></div>
-                <div class='cell' data-indx = "3" ></div>
-                <div class='cell' data-indx = "4" ></div>
-                <div class='cell' data-indx = "5" ></div>
-                <div class='cell' data-indx = "6" ></div>
-                <div class='cell' data-indx = "7" ></div>
-                <div class='cell' data-indx = "8" ></div>
+                <row>
+                    <div class='cell' data-indx="0"></div>
+                    <div class='cell' data-indx="1"></div>
+                    <div class='cell' data-indx="2"></div>
+                </row>
+                <row>
+                    <div class='cell' data-indx="3"></div>
+                    <div class='cell' data-indx="4"></div>
+                    <div class='cell' data-indx="5"></div>
+                </row>
+                <row>
+                    <div class='cell' data-indx="6"></div>
+                    <div class='cell' data-indx="7"></div>
+                    <div class='cell' data-indx="8"></div>
+                </row>
             </div>
 
             <div class = 'control'>
                 <!-- div.intial displays the starting controls -->
                 <div class = 'intial'>
                     <div class='difficulty'>
-                        <span class='level not-selected' id="blind">level 1</span>
-                        <span class='level not-selected' id="novice">level 2</span>
-                        <span class='level not-selected' id="novice 1">level 3</span>
-                        <span class='level not-selected' id="novice 2">level 4</span>
-                        <span class='level not-selected' id="master">Infinite</span>
+                        <span class='level not-selected' id="Level 1">Level 1</span>
+                        <span class='level not-selected' id="Level 2">Level 2</span>
+                        <span class='level not-selected' id="Level 3">Level 3</span>
+                        <span class='level not-selected' id="Level 4">Level 4</span>
+                        <span class='level not-selected' id="Infinite">Infinite</span>
                     </div>
 
                     <div class='start'> Start </div>
@@ -37,9 +43,9 @@
                 <!-- div.ingame displays in-game messages and controls -->
                 <div class = 'ingame' id="human">It's your turn ...</div>
                 <div class = 'ingame' id="ai">
-                    <img src = "imgs/robot.png" id = "robot" class = "robot" />
-                    <p>Waint for it ...</p>
-                </div>
+                    <div class='ingame' id="robot">
+                        <p>Wait for it ...</p>
+                    </div>
                 <div class = 'ingame' id="won">You won !</div>
                 <div class = 'ingame' id="lost">You lost !</div>
                 <div class = 'ingame' id="draw">It's a Draw</div>

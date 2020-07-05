@@ -1,6 +1,6 @@
 /*
- * Constructs an action that the ai player could make
- * @param pos [Number]: the cell position the ai would make its action in
+ * coded an action that the ai player could make
+ * the cell position the ai would make its action in
  * made that action
  */
 var AIAction = function(pos) {
@@ -33,9 +33,9 @@ var AIAction = function(pos) {
 
 /*
  * public static function that defines a rule for sorting AIActions in ascending manner
- * @param firstAction [AIAction] : the first action in a pairwise sort
- * @param secondAction [AIAction]: the second action in a pairwise sort
- * @return [Number]: -1, 1, or 0
+ * firstAction [AIAction] : the first action in a pairwise sort
+ * secondAction [AIAction]: the second action in a pairwise sort
+ *  [Number]: -1, 1, or 0
  */
 AIAction.ASCENDING = function(firstAction, secondAction) {
     if(firstAction.minimaxVal < secondAction.minimaxVal)
@@ -48,9 +48,9 @@ AIAction.ASCENDING = function(firstAction, secondAction) {
 
 /*
  * public static function that defines a rule for sorting AIActions in descending manner
- * @param firstAction [AIAction] : the first action in a pairwise sort
- * @param secondAction [AIAction]: the second action in a pairwise sort
- * @return [Number]: -1, 1, or 0
+ *firstAction [AIAction] : the first action in a pairwise sort
+ * secondAction [AIAction]: the second action in a pairwise sort
+ * return [Number]: -1, 1, or 0
  */
 AIAction.DESCENDING = function(firstAction, secondAction) {
     if(firstAction.minimaxVal > secondAction.minimaxVal)
@@ -147,7 +147,7 @@ var AI = function(level) {
      * that is: mix between choosing the optimal and suboptimal minimax decisions
      * @param turn [String]: the player to play, either X or O
      */
-    function takeANoviceMove(turn) {
+    function takeA_40_ai_Move(turn) {
         var available = game.currentState.emptyCells();
 
         //enumerate and calculate the score for each available actions to the ai player
@@ -200,7 +200,7 @@ var AI = function(level) {
  * that is: mix between choosing the optimal and suboptimal minimax decisions
  * @param turn [String]: the player to play, either X or O
  */
-    function takeANovice_1Move(turn) {
+    function takeA_60_ai_Move(turn) {
         var available = game.currentState.emptyCells();
 
         //enumerate and calculate the score for each available actions to the ai player
@@ -253,7 +253,7 @@ var AI = function(level) {
  * that is: mix between choosing the optimal and suboptimal minimax decisions
  * @param turn [String]: the player to play, either X or O
  */
-    function takeANovice_2Move(turn) {
+    function takeA_80_ai_Move(turn) {
         var available = game.currentState.emptyCells();
 
         //enumerate and calculate the score for each available actions to the ai player
@@ -303,7 +303,7 @@ var AI = function(level) {
      * that is: choose the optimal minimax decision
      * @param turn [String]: the player to play, either X or O
      */
-    function takeAMasterMove(turn) {
+    function takeA_100_ai_Move(turn) {
         var available = game.currentState.emptyCells();
 
         //enumerate and calculate the score for each avaialable actions to the ai player
@@ -350,11 +350,11 @@ var AI = function(level) {
     this.notify = function(turn) {
         switch(levelOfIntelligence) {
             //invoke the desired behavior based on the level chosen
-            case "blind": takeABlindMove(turn); break;
-            case "novice": takeANoviceMove(turn); break;
-            case "novice 1": takeANovice_1Move(turn); break;
-            case "novice 2": takeANovice_2Move(turn); break;
-            case "master": takeAMasterMove(turn); break;
+            case "Level 1": takeABlindMove(turn); break;
+            case "Level 2": takeA_40_ai_Move(turn); break;
+            case "Level 3": takeA_60_ai_Move(turn); break;
+            case "Level 4": takeA_80_ai_Move(turn); break;
+            case "Infinite": takeA_100_ai_Move(turn); break;
         }
     };
 };

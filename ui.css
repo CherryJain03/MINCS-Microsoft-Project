@@ -1,7 +1,7 @@
 .main-container {
+    margin: 0 auto;
     height: 100%;
     width: 900px;
-    margin: 0 auto;
 }
 
 .board {
@@ -13,21 +13,45 @@
 .cell {
     width: 140px;
     height: 140px;
-    border: 2px dashed lightskyblue;
+    border: 2px dashed darkorchid;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    cursor:pointer;
-    float:left;
+    cursor: grab;
+    float: left;
     line-height: 140px;
     text-align: center;
     font-family: "Arial Narrow";
     font-weight: bold;
     font-size: 70px;
 }
+.board {
+    height: 420px;
+    width: 420px;
+    margin: 0 auto;
+}
+
+/*
+ * giving a hash ahape to the board
+ */
+    .board row:first-child div {
+        border-top: 0;
+    }
+
+    .board row:last-child div {
+        border-bottom: 0;
+    }
+
+    .board row div:first-child {
+        border-left: 0;
+    }
+
+    .board row div:last-child {
+        border-right: 0;
+    }
 
 .control {
-    font-family: "Arial Narrow";
+    font-family: Cambria;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -35,9 +59,9 @@
 }
 
 .level {
-    margin: 0 15px;
-    color: lightskyblue;
-    cursor: pointer;
+    margin: 0 60px;
+    color: darkslateblue;
+    cursor: grab;
 }
 
 .not-selected {
@@ -56,13 +80,13 @@
     line-height: 100px;
     text-align: center;
     border-radius: 50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
     color: white;
     margin-left: auto;
     margin-right: auto;
-    cursor:pointer;
-    opacity:0.5;
+    cursor: grab;
+    opacity: 1;
 }
 
 .start:hover {
@@ -78,6 +102,7 @@
     margin:0px;
 }
 
-.robot {
-    opacity:0.5;
-}
+
+
+
+
