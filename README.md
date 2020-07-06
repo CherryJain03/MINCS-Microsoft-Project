@@ -6,7 +6,7 @@ a) Including a score board
 b) Including an algorithm which can provide hint to current player for the next move.
 
 Mars Colonisation Project 
-https://cherryjain03.github.io/MINCS-Microsoft-Project/withComputer.html
+ https://cherryjain03.github.io/MINCS-Microsoft-Project/
 
 Team members:
 1) Cherry Jain
