@@ -56,7 +56,7 @@ body {
 }
 
     /*
- * giving a hash ahape to the board
+ * giving a hash shape to the board
  */
     .board row:first-child div {
         border-top: 0;
