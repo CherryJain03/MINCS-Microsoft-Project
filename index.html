@@ -2,15 +2,11 @@
 <html>
     <head>
         <title>Tic-Tac-Toe AI</title>
-        <link rel = 'stylesheet' type = 'text/css' href = 'ui.css'>
-        
-       
+        <link rel = 'stylesheet' type = 'text/css' href = 'styles/ui.css'>
     </head>
 
     <body>
-        <div class = 'main-container'>
-          
-            
+        <div class='main-container'>
             <div class='board'>
                 <!-- data-indx following cell divs represents cell index in 1D array representation -->
                 <row>
@@ -29,12 +25,10 @@
                     <div class='cell' data-indx="8"></div>
                 </row>
             </div>
-        </div>
-        <div class = 'container'>
 
-            <div class = 'control'>
+            <div class='control'>
                 <!-- div.intial displays the starting controls -->
-                <div class = 'intial'>
+                <div class='intial'>
                     <div class='difficulty'>
                         <span class='level not-selected' id="Level 1">Level 1</span>
                         <span class='level not-selected' id="Level 2">Level 2</span>
@@ -42,30 +36,27 @@
                         <span class='level not-selected' id="Level 4">Level 4</span>
                         <span class='level not-selected' id="Infinite">Infinite</span>
                     </div>
-                    <p>
 
                     <div class='start'> Start </div>
-                    </p>
-                
-               </div>
+                    
+                </div>
 
                 <!-- div.ingame displays in-game messages and controls -->
-                <div class = 'ingame' id="human">It's your turn ...</div>
-                <div class = 'ingame' id="ai">
+                <div class='ingame' id="human">It's your turn ...</div>
+                <div class='ingame' id="ai">
                     <div class='ingame' id="robot"></div>
                         <p>Wait for it ...</p>
                     </div>
-                <div class = 'ingame' id="won">You won !</div>
-                <div class = 'ingame' id="lost">You lost !</div>
-                <div class = 'ingame' id="draw">It's a Draw</div>
-            </div>
-        </div>
+                    <div class='ingame' id="won">You won !</div>
+                    <div class='ingame' id="lost">You lost !</div>
+                    <div class='ingame' id="draw">It's a Draw</div>
+                </div>
+     </div>
 
-        <script src = "jquery-1.10.1.min.js"></script>
-        <script src = "ui.js"></script>
-        <script src = "control.js"></script>
-        <script src = "game.js"></script>
-        <script src = "ai.js"></script>
-        
+        <script src = "scripts/jquery-1.10.1.min.js"></script>
+        <script src = "scripts/ui.js"></script>
+        <script src = "scripts/game.js"></script>
+        <script src = "scripts/ai.js"></script>
+        <script src = "scripts/control.js"></script>
     </body>
 </html>
