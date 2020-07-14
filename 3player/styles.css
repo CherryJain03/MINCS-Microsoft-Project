@@ -1,0 +1,15 @@
+
+
+html, body {
+  background-color: black;
+  margin-left: 260px;
+  margin-top: 70px;
+  padding: 0;
+  
+}
+
+canvas {
+  display: block;
+}
+
+
