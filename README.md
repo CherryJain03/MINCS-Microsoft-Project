@@ -7,10 +7,9 @@ b) Including an algorithm which can provide hint to current player for the next 
 
 Mars Colonisation Project 
  https://cherryjain03.github.io/MINCS-Microsoft-Project/
-
-Team members:
-1) Cherry Jain
-2) Saakshi Chaudhary
-3) Neha Bobde
-4) Ishita
-
+ 
+ Team Memebers:
+ 1) Cherry Jain
+ 2) Saakshi Choudhary
+ 3) Ishita Kaul
+ 4) Neha Bobde
