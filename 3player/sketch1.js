@@ -9,19 +9,18 @@ let board = [
 let w;
 let h;
 
+
 let ai = 'X';
 let human = 'O';
 let human2 = 'Y';
-board[0][0] = 'X';
-board[0][1] = 'X';
-board[0][2] = human;
-board[2][2] = human;
-board[3][1] = human2;
+
+board[0][0] = 'X';  //Initialising the board as AI has first move
 
 
+var ran = 1;
 
 
-let currentPlayer = human2;
+let currentPlayer = human;
 
 function setup() {
 createCanvas(400, 400);
@@ -104,12 +103,22 @@ if (winner == null && openSpots == 0) {
 
 function mousePressed() {
 if (currentPlayer == human2) {
+  //document.write(<h2>Player 2 Turn Y</h2>)
   let x = floor(mouseX / w);
   let y = floor(mouseY / h);
   if (board[x][y] == '') {
     board[x][y] = human2;
     currentPlayer = ai;
-    bestMove();
+    if(ran == 1){
+      if(board[1][0]=='') board[1][0]=ai;
+      else if(board[0][1]=='')board[0][1]=ai;
+      else board[1][1]==ai;
+      ran =0;
+    }
+    else {
+      bestMove();
+    }
+    
   }
 }
  if (currentPlayer == human) {
@@ -121,18 +130,14 @@ if (currentPlayer == human2) {
     //bestMove();
   }
 }
-if (currentPlayer == ai) {
-  let x = floor(mouseX / w);
-  let y = floor(mouseY / h);
-  if (board[x][y] == '') {
-    board[x][y] = ai;
-    currentPlayer = human;
-    //bestMove();
-  }
+if(currentPlayer == ai){
+  currentPlayer=human;
+}
+
 }
 
 
-}
+
 
 function draw() {
 background(255);
