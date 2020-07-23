@@ -7,7 +7,7 @@ a) Including a score board
 
 b) Including an algorithm which can provide hint to current player for the next move.
 
-c) A 3 Player Tic Tac Toe on a 4×4 grid with Xs , Oss and Ys. It consist of four 3×3 tic tac toe, whosoeve makes any 3 consecutive row or column or a diagonal wins the game. We Hope next time in a group of odd friends no one feels left out.
+c) A 3 Player Tic Tac Toe on a 4×4 grid with Xs , Os and Ys. It consist of four 3×3 tic tac toe, whosoever makes any 3 consecutive row or column or a diagonal wins the game. We Hope next time in a group of odd friends no one feels left out.
 
 d) Play with the AI, learn from the AI and then time to beat your mates.
 
