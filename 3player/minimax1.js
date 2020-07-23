@@ -35,10 +35,12 @@ function bestMove() {
   };
   
   //Minimax algorithm using alpha beta pruning
+  // AI assumes that the 2 players team up and are trying to fail it 
+  // MINIMAX with 1 MAX and 2 MIN
   function minimax(board, depth, isMaximizing,alpha,beta,player) {
     let result = checkWinner();
     if (result !== null) {
-      return scores[result];
+      return scores[result]/depth;
     }
   
     if (isMaximizing) {
@@ -87,7 +89,7 @@ function bestMove() {
         for (let j = 0; j < 4; j++) {
           // Is the spot available?
           if (board[i][j] == '') {
-            board[i][j] = human;
+            board[i][j] = human2;
             let score = minimax(board, depth + 1, true, alpha, beta, human2);
             board[i][j] = '';
             bestScore = min(score, bestScore);

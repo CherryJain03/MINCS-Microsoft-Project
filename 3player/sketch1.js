@@ -40,6 +40,7 @@ let winner = null;
 for (let i = 0; i < 4; i++) {
   if (equals3(board[i][0], board[i][1], board[i][2])) {
     winner = board[i][0];
+
   }
   else if(equals3(board[i][1], board[i][2], board[i][3])) {
     winner = board[i][1];
@@ -101,19 +102,23 @@ if (winner == null && openSpots == 0) {
 }
 }
 
+
+
 function mousePressed() {
 if (currentPlayer == human2) {
-  //document.write(<h2>Player 2 Turn Y</h2>)
+  
   let x = floor(mouseX / w);
   let y = floor(mouseY / h);
   if (board[x][y] == '') {
     board[x][y] = human2;
     currentPlayer = ai;
+    
     if(ran == 1){
       if(board[1][0]=='') board[1][0]=ai;
       else if(board[0][1]=='')board[0][1]=ai;
       else board[1][1]==ai;
       ran =0;
+      currentPlayer=human;
     }
     else {
       bestMove();
@@ -130,10 +135,17 @@ if (currentPlayer == human2) {
     //bestMove();
   }
 }
-if(currentPlayer == ai){
-  currentPlayer=human;
+else {
+  let x = floor(mouseX / w);
+    let y = floor(mouseY / h);
+    if (board[x][y] == '') {
+      board[x][y] = ai;
+      currentPlayer = human;
+      //bestMove();
+ 
 }
 
+}
 }
 
 
@@ -174,9 +186,10 @@ for (let j = 0; j < 4; j++) {
 
 let result = checkWinner();
 if (result != null) {
+  
   noLoop();
   let resultP = createP('');
-  resultP.style('font-size', '32pt');
+  resultP.style('font-size', '32pt','color','white');
   if (result == 'tie') {
     resultP.html('Tie!');
   } else {

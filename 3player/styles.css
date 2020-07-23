@@ -1,15 +1,60 @@
 
+html{
+  background-color:#ccc;
+}
+ 
+ .info{
+  
+  font-size: 1cm;
+  color: white;
+  font-weight: 100;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-html, body {
-  background-color: black;
-  margin-left: 260px;
-  margin-top: 70px;
-  padding: 0;
+  
+  
+}
+canvas {
+  display: block;
+  margin-left: 500px;
+  margin-top: 50px;
+  
   
 }
 
-canvas {
-  display: block;
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
 }
 
+/* Create two columns/boxes that floats next to each other */
+
+
+/* Style the list inside the menu */
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 50px;
+  color:black;
+}
+
+
+
+/* Clear floats after the columns */
+section:after {
+  float: left;
+  width: 30%;
+  height: 100px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 100px;
+  
+}
 
