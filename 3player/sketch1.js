@@ -193,7 +193,7 @@ if (result != null) {
   
   noLoop();
   let resultP = createP('');
-  resultP.style('font-size', '32pt','color','white');
+  resultP.style('font-size', '45pt');
   if (result == 'tie') {
     resultP.html('Tie!');
   } else {
