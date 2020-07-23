@@ -143,10 +143,14 @@ else {
       currentPlayer = human;
       //bestMove();
  
-}
+
 
 }
 }
+}
+
+
+
 
 
 
@@ -197,3 +201,5 @@ if (result != null) {
   }
 }
 }
+
+

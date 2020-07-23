@@ -9,7 +9,7 @@ Mars Colonisation Project
  https://cherryjain03.github.io/MINCS-Microsoft-Project/
  
  Team Memebers:
- 1) Cherry Jain
- 2) Saakshi Choudhary
+ 1) Saakshi Choudhary
+ 2) Cherry Jain
  3) Ishita Kaul
  4) Neha Bobde
