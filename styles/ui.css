@@ -93,7 +93,9 @@ body {
     cursor: pointer;
     font-weight: 600;
     width: 100%;
-   
+    margin-right: 10%;
+    margin-left: 0%;
+    
 }
 
 @-webkit-keyframes pew {
@@ -141,10 +143,10 @@ body {
     border-radius: 2px;
     color: #ffffff;
     font-family: 'Gloria Hallelujah', cursive;
-    text-align:center;
+    text-align: left;
     cursor: pointer;
     font-weight: 600;
-    width: 10%;
+    width: 13%;
     margin-top: 10px;
     margin-left: 35%;
 }
