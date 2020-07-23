@@ -1,6 +1,6 @@
 
 html{
-  background-color:#ccc;
+  background-color: rgba(8, 2, 49, 0.986);
 }
  
  .info{
@@ -16,14 +16,14 @@ html{
 }
 canvas {
   display: block;
-  margin-left: 500px;
+  margin-left: 530px;
   margin-top: 50px;
   
   
 }
 
 header {
-  background-color: #666;
+  background-color: whitesmoke;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -35,26 +35,19 @@ header {
 
 /* Style the list inside the menu */
 section ul {
+  margin-top: 10px;
   list-style-type: none;
   padding: 0;
   margin-left: 50px;
-  color:black;
+  color:white;
 }
 
 
 
-/* Clear floats after the columns */
-section:after {
-  float: left;
-  width: 30%;
-  height: 100px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-
-  content: "";
-  display: table;
-  clear: both;
-  margin-left: 100px;
-  
+h2{
+  color: black; 
+}
+a{
+  color: white;
 }
 
