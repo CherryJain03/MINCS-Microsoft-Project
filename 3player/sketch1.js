@@ -1,3 +1,5 @@
+//UI handle of the 3player game
+
 let board = [
   ['', '', '',''],
   ['', '', '',''],
@@ -148,12 +150,6 @@ else {
 }
 }
 }
-
-
-
-
-
-
 
 function draw() {
 background(255);

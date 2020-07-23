@@ -1,3 +1,6 @@
+//Minimax Algoritm to optimise AI's move 
+
+
 function bestMove() {
 
     // AI to make its turn
@@ -13,8 +16,8 @@ function bestMove() {
           if (score >= bestScore) {
             bestScore = score;
             move = { i, j };
-            //if(bestScore == 10){  //Taking that highest maximum possible score is 10
-            //  break;
+            //if(bestScore == 10){  //Taking that highest maximum possible score is 10 -----
+            //  break; 
             //}
           
           }
@@ -36,11 +39,13 @@ function bestMove() {
   
   //Minimax algorithm using alpha beta pruning
   // AI assumes that the 2 players team up and are trying to fail it 
-  // MINIMAX with 1 MAX and 2 MIN
+  // MINIMAX with 1 MAX and 2 MIN 
+  // Alpha keeps the minimum value of the score and beta keeps the maximum
+
   function minimax(board, depth, isMaximizing,alpha,beta,player) {
     let result = checkWinner();
     if (result !== null) {
-      return scores[result]/depth;
+      return scores[result]/depth;         //To obtain the bestmove faster
     }
   
     if (isMaximizing) {
