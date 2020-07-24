@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background-image: url(https://github.com/CherryJain03/MINCS-Microsoft-Project/blob/Website-background/Mars_bckgrnd_blue.png?raw=true);
+    background-position: 370px;
+    background-position-x: center;
+    background-position-y: top;
+}
+.main-container {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+    /*font-size: 40px;*/
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+    color: white;
+    margin-top: 90px;
+}
+
+.start {
+   
+    background-color: orangered;
+    border: none;
+    padding: 6px 76px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 600;
+    width: 12%;
+    margin-top: 10px;
+    margin-left: 35%;
+}
+
+.start:hover {
+    opacity:1;
+}
+
+.dropdown-menu {
+    position: relative;
+    width:450px;
+    color: aqua;
+}
+
+.with-borders {
+    border: 1px solid lightskyblue;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.dropdown-menu > .selection {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.dropdown-menu > .items {
+    border: 1px solid lightskyblue;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 5px;
+    width:450px;
+    z-index: 1000;
+    position: absolute;
+    background: white;
+    display: none;
+}
+
+.dropdown-menu > .items > h1 {
+    opacity: 0.5;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu > .items > h1:hover {
+    opacity: 1;
+}

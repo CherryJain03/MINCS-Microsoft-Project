@@ -44,7 +44,7 @@ body {
     float: left;
     line-height: 140px;
     text-align: center;
-    font-family: "Arial Narrow";
+    font-family: "Comic Sans MS";
     font-weight: bold;
     font-size: 70px;
 }
@@ -84,7 +84,7 @@ body {
 
 .level {
     border: 1px solid gainsboro;
-    margin: 0 2px;
+    margin: 0px 2px;
     background-color: grey;
     padding: 3px 25px;
     border-radius: 2px;
@@ -93,7 +93,9 @@ body {
     cursor: pointer;
     font-weight: 600;
     width: 100%;
-   
+    margin-right: 10%;
+    margin-left: 0%;
+    
 }
 
 @-webkit-keyframes pew {
@@ -141,10 +143,10 @@ body {
     border-radius: 2px;
     color: #ffffff;
     font-family: 'Gloria Hallelujah', cursive;
-    text-align:center;
+    text-align: left;
     cursor: pointer;
     font-weight: 600;
-    width: 10%;
+    width: 12%;
     margin-top: 10px;
     margin-left: 35%;
 }
