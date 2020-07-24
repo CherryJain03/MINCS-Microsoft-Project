@@ -2,7 +2,7 @@ const init = function(e){
     let btn = document.querySelector("#item1");
 
     btn.addEventListener('click',function(){
-        window.document.location = './code.html';
+        window.document.location = './3player/code.html';
     });
     };
 

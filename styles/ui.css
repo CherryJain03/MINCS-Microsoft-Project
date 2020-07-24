@@ -194,3 +194,58 @@ body {
     .ingame > p {
         margin: 0px;
     }
+
+    .cher{
+        border: 1px solid gainsboro;
+        margin: 0 2px;
+        background-color: grey;
+        padding: 3px 25px;
+        border-radius: 2px;
+        color: #ffffff;
+        font-family: sans-serif;
+        cursor: pointer;
+        font-weight: 600;
+        width: 20%;
+        height: 30px;
+        margin-top: 30px;
+        margin-left: 75%;
+       
+    }
+    
+    @-webkit-keyframes pew {
+        0% {
+            opacity: 0;
+        }
+    
+        20% {
+            opacity: 1;
+        }
+    
+        40% {
+            opacity: 0;
+        }
+    
+        60% {
+            opacity: 1;
+        }
+    
+        70% {
+            opacity: 0;
+        }
+    
+        80% {
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    .not-selected {
+        opacity: 0.5;
+    }
+    
+        .not-selected:hover {
+            opacity: 1;
+    }
